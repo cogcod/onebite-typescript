@@ -35,7 +35,9 @@
          "target": "ESNext",   // js 버전 설정
          "module": "ESNext",   // js 모듈 시스템 설정
          "outDir": "dist",     // 컴파일된 js파일 위치 설정
-         "strict": true        // 타입검사 엄격 여부
+         "strict": true,       // 타입검사 엄격 여부
+         "moduleDetection": "force", // ts의 파일 모듈 인식 여부 - 개별/전역
+         "skipLibCheck": true  // 타입 정의 파일(.d.ts)의 타입 검사 생략
       },
       "include": [
          "src"                 // 컴파일할 파일의 범위와 위치 설정
