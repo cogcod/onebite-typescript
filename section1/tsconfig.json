@@ -3,7 +3,15 @@
     "target": "ESNext", // js 버전 설정
     "module": "ESNext", // js 모듈시스템 설정 ('CommonJS : 예전 버전' or 'esModule')
     "outDir": "dist", // 컴파일된 js파일 위치 설정
-    "strict": true // 타입검사 엄격 여부
+    "strict": false, // 타입검사 엄격 여부
+    /* 
+      ts파일은 전역모듈로 인식되기 때문에, 각각 다른 ts파일이라도 같은 변수명 사용 불가!
+      export같은 모듈시스템을 사용하는 키워드를 사용 해주어야 개별 파일로 인식하게 된다.
+      moduleDetection 옵션을 설정한 뒤 같은 변수명이 있는 ts파일을 컴파일하면 
+      js 파일 내부에 'export {};' 코드가 생성된 것을 확인할 수 있다. 
+    */
+    "moduleDetection": "force", // ts의 파일 모듈 인식 여부 - 개별/전역 모듈
+    "skipLibCheck": true // 타입 정의 파일(.d.ts)의 타입 검사 생략
   },
   /* 컴파일할 파일의 범위와 위치 설정 */
   "include": [
