@@ -3,13 +3,7 @@
 > 참고 : [한 입 크기로 잘라먹는 타입스크립트](https://www.inflearn.com/course/%ED%95%9C%EC%9E%85-%ED%81%AC%EA%B8%B0-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8)
 > / [docs](https://ts.winterlood.com/6c9bf87f-6a8f-4e96-95b4-5e12d9f82165#c8a5f8ebaa7d4692a90e3d743bb21dea)
 
-## 목차
-
-- [Section 01. 타입스크립트 개론](#section-01-타입스크립트-개론)
-
-## Section 01. 타입스크립트 개론
-
-### Hello TS World!
+## Hello TS World!
 
 1. 초기화 및 설치
    - `npm init`
@@ -23,7 +17,7 @@
    - `npm i -g tsx`
    - `tsx src/index.ts` : 바로 node로 실행
 
-### 컴파일러 옵션 설정하기
+## 컴파일러 옵션 설정하기
 
 1. 컴파일러 옵션 파일 생성
    - `tsc --init`
